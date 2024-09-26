@@ -10,8 +10,8 @@ body, h1, h2, h3, h4, h5, figure, p, ol, ul {
 
 .container#main{
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 23% 77%;
+    grid-template-rows: 17% 83%;
 }
 
 .container#sidebar{
@@ -49,16 +49,85 @@ ul{
 
 .container#header{
     grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20% 80%;
+    padding: 20px 50px 0px 40px;
+    box-shadow: 0 4px 16px -2px rgba(128, 128, 128, 0.76);
+}
+
+div.headerContainer#search{
+    display: flex;
+    align-items: center;
+    gap: 20px;   
+}
+
+input#headerSearchBar{
+    width: 85%;
+    border-radius: 16px;
+    height: 30px;
+    background-color: #dddddd; 
+    border: 1px solid #dddddd; 
+;
+}
+
+div.headerContainer#userMenu{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-weight: bolder;
+    font-size: 24px;
+    justify-content: flex-end;
+}
+
+div.headerContainer#userInformation{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bolder;
+}
+
+div.userInformationElement#name{
+    font-size: 32px;
+}
+
+div.headerContainer#buttons{
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+    align-items: last center;
+}
+
+button{
+    height: 40px;
+    width: 100px;
+    border-radius: 18px;
+    background-color: #d97706;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 16px;
+    border: 1px solid #d97706
 }
 
 .container#mainContent{
     grid-area: 2/2/3/3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 20px 30vh 20fr 30vh;
 }
+
+
 
 .icons{
     width: 30px;
     height: 30px;
     -webkit-filter: invert(100%);
+}
+
+.headerIcons{
+    width: 30px;
+    height: 30px;
+    margin-top: 6px;
 }
 
 .logo{

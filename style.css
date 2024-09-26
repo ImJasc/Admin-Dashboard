@@ -112,10 +112,38 @@ button{
 .container#mainContent{
     grid-area: 2/2/3/3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 20px 30vh 20fr 30vh;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 5% 45% 5% 45%;
 }
 
+div.mainContentTitle{
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+div.mainContentTitle#projects{
+    grid-column: 1/2;    
+}
+
+div.mainContentTitle#announcements{
+    grid-column: 2/3;    
+}
+
+div.mainContentTitle#trending{
+    grid-area: 3/2/4/2;
+}
+
+div.mainContentContainer#projects{
+    grid-row: 2/5;
+}
+
+div.mainContentContainer#announcements{
+    grid-row: 2/3;
+}
+
+div.mainContentContainer#trending{
+    grid-row: 4/5;
+}
 
 
 .icons{

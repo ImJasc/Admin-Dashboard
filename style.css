@@ -114,11 +114,15 @@ button{
     display: grid;
     grid-template-columns: 80% 20%;
     grid-template-rows: 5% 45% 5% 45%;
+    padding: 30px 30px 60px 20px;   
+    background-color: #dddddd; 
+    gap: 20px;
 }
 
 div.mainContentTitle{
     font-weight: bolder;
     font-size: 18px;
+    align-self: last baseline;
 }
 
 div.mainContentTitle#projects{
@@ -135,15 +139,31 @@ div.mainContentTitle#trending{
 
 div.mainContentContainer#projects{
     grid-row: 2/5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 div.mainContentContainer#announcements{
     grid-row: 2/3;
+    background-color: #fff;
 }
 
 div.mainContentContainer#trending{
     grid-row: 4/5;
+    background-color: #fff;
 }
+
+div.projectsElement#card{
+    background-color: #fff;
+    height: 200px;
+    line-height: 1;
+    padding: 35px 15px 30px 30px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 1px 1px lightgrey;
+    border-left: 8px solid #fbbf24;
+}
+
 
 
 .icons{

@@ -10,7 +10,7 @@ body, h1, h2, h3, h4, h5, figure, p, ol, ul {
 
 .container#main{
     display: grid;
-    grid-template-columns: 23% 77%;
+    grid-template-columns: 21% 79%;
     grid-template-rows: 17% 83%;
 }
 
@@ -53,7 +53,7 @@ ul{
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 20% 80%;
     padding: 20px 50px 0px 40px;
-    box-shadow: 0 4px 16px -2px rgba(128, 128, 128, 0.76);
+    box-shadow: 0 4px 2px -2px grey;
 }
 
 div.headerContainer#search{
@@ -112,8 +112,8 @@ button{
 .container#mainContent{
     grid-area: 2/2/3/3;
     display: grid;
-    grid-template-columns: 80% 20%;
-    grid-template-rows: 5% 45% 5% 45%;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 2% 48% 2% 48%;
     padding: 30px 30px 60px 20px;   
     background-color: #dddddd; 
     gap: 20px;
@@ -141,7 +141,7 @@ div.mainContentContainer#projects{
     grid-row: 2/5;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 20px;    
 }
 
 div.mainContentContainer#announcements{
@@ -185,6 +185,32 @@ p.projectsElement#cardTitle{
 }
 
 p.projectsElement#cardBody{
+    color: #525252;    
+}
+
+div.mainContentContainer#announcements{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px 15px 30px;
+    border-radius: 8px;
+}
+
+div.announcementsElement#card{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 0 2px 2px -2px gray;
+}
+
+div.announcementsElement#lastCard{
+    padding-top: 15px;      
+}
+
+p.announcementsElement#cardTitle{
+    font-weight: bolder;
+}
+
+p.announcementsElement#cardBody{
+    font-size: 14px;
     color: #525252;
 }
 

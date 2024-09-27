@@ -114,7 +114,7 @@ button{
     display: grid;
     grid-template-columns: 70% 30%;
     grid-template-rows: 2% 48% 2% 48%;
-    padding: 30px 30px 60px 20px;   
+    padding: 30px 30px 100px 20px;   
     background-color: #dddddd; 
     gap: 20px;
 }
@@ -142,6 +142,7 @@ div.mainContentContainer#projects{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;    
+    align-self: stretch;
 }
 
 div.mainContentContainer#announcements{
@@ -151,7 +152,8 @@ div.mainContentContainer#announcements{
 
 div.mainContentContainer#trending{
     grid-row: 4/5;
-    background-color: #fff;
+    background-color: #fff;    
+    align-self: last baseline;
 }
 
 div.projectsElement#card{
@@ -210,6 +212,29 @@ p.announcementsElement#cardTitle{
 }
 
 p.announcementsElement#cardBody{
+    font-size: 14px;
+    color: #525252;
+}
+
+div.mainContentContainer#trending{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px 15px 30px;
+    gap: 20px;
+    border-radius: 8px;
+}
+
+div.trendingElement#user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+p.trendingElement#username{
+    font-weight: bolder;
+}
+
+p.trendingElement#userDescription{
     font-size: 14px;
     color: #525252;
 }

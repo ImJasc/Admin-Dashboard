@@ -1,248 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="script.js" defer></script>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-    <body>
-        <div class="container" id="main">
-            <div class="container" id="sidebar">
-                <div class="sidebarContainer" id="header">
-                    <div class="sidebarHearderElement" id="name">
-                        <img src="Resources/Logo/dashboard.svg" alt="" class="logo">
-                        Dashboard
-                    </div>
-                </div>
-
-                <div class="sidebarContainer" id="mainMenu">
-                    <ul class="sidebarMenu" id="main">
-                        <li class="mainMenuElement" id="home">
-                            <img src="Resources/Icons/home.svg" alt="" class="icons">
-                            Home
-                        </li>
-                        <li class="mainMenuElement" id="profile">
-                            <img src="Resources/Icons/card-account-details-outline.svg" alt="" class="icons">
-                            Profile
-                        </li>
-                        <li class="mainMenuElement" id="messages">
-                            <img src="Resources/Icons/message-reply.svg" alt="" class="icons">
-                            Messages
-                        </li>
-                        <li class="mainMenuElement" id="history">
-                            <img src="Resources/Icons/history.svg" alt="" class="icons">
-                            History
-                        </li>
-                        <li class="mainMenuElement" id="tasks">
-                            <img src="Resources/Icons/file-multiple.svg" alt="" class="icons">
-                            Tasks
-                        </li>
-                        <li class="mainMenuElement" id="communities">
-                            <img src="Resources/Icons/account-group.svg" alt="" class="icons">
-                            Communities
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="siebarContainer" id="secondaryMenu">
-                    <ul class="sidebarMenu" id="secondary">
-                        <li class="secondaryMenuElement" id="settings">
-                            <img src="Resources/Icons/cog.svg" alt="" class="icons">
-                            Settings
-                        </li>
-                        <li class="secondaryMenuElement" id="support">
-                            <img src="Resources/Icons/help-box.svg" alt="" class="icons">
-                            Support
-                        </li>
-                        <li class="secondaryMenuElement" id="privacy">
-                            <img src="Resources/Icons/shield-check.svg" alt="" class="icons">
-                            Privacy
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-
-            <div class="container" id="header">
-                <div class="headerContainer" id="search">
-                    <label for="searchBar">
-                        <img src="Resources/Icons/magnify.svg" alt="" class="headerIcons">
-                    </label>
-                    <input type="search" name="searchBar" id="headerSearchBar" disabled>
-                </div>
-                
-                <div class="headerContainer" id="userMenu">
-                    <img src="Resources/Icons/bell-ring-outline.svg" alt="" class="headerIcons">
-                    <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="smallProfile">
-                    <p class="userMenuElemet" id="name">Jasc</p>
-                </div>
-                
-                <div class="headerContainer" id="userInformation">
-                    <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="profilePicture">
-                    <div class="userInformationContainer" id="text">
-                        <div class="userInformationElement" id="greetings">Hi there,</div>
-                        <div class="userInformationElement" id="name">Jasc (@JustJasc)</div>
-                    </div>
-                </div>
-                
-                <div class="headerContainer" id="buttons">
-                    <button class="buttonsElement" id="new">
-                        New
-                    </button>
-                    <button class="buttonsElement" id="upload">
-                        Upload
-                    </button>
-                    <button class="buttonsElements" id="share">
-                        Share
-                    </button>
+<body>
+    <div class="container" id="main">
+        <div class="container" id="sidebar">
+            <div class="sidebarContainer" id="header">
+                <div class="sidebarHearderElement" id="name">
+                    <img src="Resources/Logo/dashboard.svg" alt="" class="logo">
+                    Dashboard
                 </div>
             </div>
 
+            <div class="sidebarContainer" id="mainMenu">
+                <ul class="sidebarMenu" id="main">
+                    <li class="mainMenuElement" id="home">
+                        <img src="Resources/Icons/home.svg" alt="" class="icons">
+                        Home
+                    </li>
+                    <li class="mainMenuElement" id="profile">
+                        <img src="Resources/Icons/card-account-details-outline.svg" alt="" class="icons">
+                        Profile
+                    </li>
+                    <li class="mainMenuElement" id="messages">
+                        <img src="Resources/Icons/message-reply.svg" alt="" class="icons">
+                        Messages
+                    </li>
+                    <li class="mainMenuElement" id="history">
+                        <img src="Resources/Icons/history.svg" alt="" class="icons">
+                        History
+                    </li>
+                    <li class="mainMenuElement" id="tasks">
+                        <img src="Resources/Icons/file-multiple.svg" alt="" class="icons">
+                        Tasks
+                    </li>
+                    <li class="mainMenuElement" id="communities">
+                        <img src="Resources/Icons/account-group.svg" alt="" class="icons">
+                        Communities
+                    </li>
+                </ul>
+            </div>
 
-            <div class="container" id="mainContent">
-                <div class="mainContentTitle" id="projects">Your Projects</div>
-                <div class="mainContentTitle" id="announcements">Announcements</div>
-                <div class="mainContentTitle" id="trending">Trending</div>
-                <div class="mainContentContainer" id="projects">
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Super Cool Project</p>
-                            <p class="projectsElement" id="cardBody">Sed tempus ut lacus ut scelerisque.
-                                Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
+            <div class="siebarContainer" id="secondaryMenu">
+                <ul class="sidebarMenu" id="secondary">
+                    <li class="secondaryMenuElement" id="settings">
+                        <img src="Resources/Icons/cog.svg" alt="" class="icons">
+                        Settings
+                    </li>
+                    <li class="secondaryMenuElement" id="support">
+                        <img src="Resources/Icons/help-box.svg" alt="" class="icons">
+                        Support
+                    </li>
+                    <li class="secondaryMenuElement" id="privacy">
+                        <img src="Resources/Icons/shield-check.svg" alt="" class="icons">
+                        Privacy
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="container" id="header">
+            <div class="headerContainer" id="search">
+                <label for="searchBar">
+                    <img src="Resources/Icons/magnify.svg" alt="" class="headerIcons">
+                </label>
+                <input type="search" name="searchBar" id="headerSearchBar" disabled>
+            </div>
+
+            <div class="headerContainer" id="userMenu">
+                <img src="Resources/Icons/bell-ring-outline.svg" alt="" class="headerIcons">
+                <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="smallProfile">
+                <p class="userMenuElemet" id="name">Jasc</p>
+            </div>
+
+            <div class="headerContainer" id="userInformation">
+                <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="profilePicture">
+                <div class="userInformationContainer" id="text">
+                    <div class="userInformationElement" id="greetings">Hi there,</div>
+                    <div class="userInformationElement" id="name">Jasc (@JustJasc)</div>
+                </div>
+            </div>
+
+            <div class="headerContainer" id="buttons">
+                <button class="buttonsElement" id="new">
+                    New
+                </button>
+                <button class="buttonsElement" id="upload">
+                    Upload
+                </button>
+                <button class="buttonsElements" id="share">
+                    Share
+                </button>
+            </div>
+        </div>
+
+
+        <div class="container" id="mainContent">
+            <div class="mainContentTitle" id="projects">Your Projects</div>
+            <div class="mainContentTitle" id="announcements">Announcements</div>
+            <div class="mainContentTitle" id="trending">Trending</div>
+            <div class="mainContentContainer" id="projects">
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Super Cool Project</p>
+                        <p class="projectsElement" id="cardBody">Sed tempus ut lacus ut scelerisque.
+                            Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
                     </div>
-
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Less Cool Project</p>
-                            <p class="projectsElement" id="cardBody">Nullam condimentum ipsum ut lectus vehicula consectetur.
-                                Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.
-                                Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
-                               </p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
-                    </div>
-
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Impossible App</p>
-                            <p class="projectsElement" id="cardBody">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu,
-                                a placerat velit sagittis id.</p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
-                    </div>
-
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Easy Peasy App</p>
-                            <p class="projectsElement" id="cardBody">Etiam cursus eros ac efficitur fringilla.
-                                Vestibulum dignissim urna get accumsan aliquam.
-                                Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
-                    </div>
-
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Ad Blocker</p>
-                            <p class="projectsElement" id="cardBody">Quisque get rutrum nisl.
-                                Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.
-                                Aliquam sed malesuada eros.</p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
-                    </div>
-
-                    <div class="projectsElement" id="card">
-                        <div class="projectsElement" id="container">
-                            <p class="projectsElement" id="cardTitle">Money Maker</p>
-                            <p class="projectsElement" id="cardBody">Present convallis, libero quis congue elementum,
-                                nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
-                                Pellentesque mollis nec sem vel aliquam.</p>
-                        </div>
-                        <div class="projectsElement" id="icons">
-                            <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
-                            <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
-                        </div>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
                     </div>
                 </div>
 
-                <div class="mainContentContainer" id="announcements">
-                    <div class="announcementsElement" id="card">
-                        <p class="announcementsElement" id="cardTitle">Site Maintenance</p>
-                        <p class="announcementsElement" id="cardBody">Vestibulum condimentum tellus lacus, 
-                            in accumsan elit maximus ac. Donec hendrerit sodales conque....</p>
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Less Cool Project</p>
+                        <p class="projectsElement" id="cardBody">Nullam condimentum ipsum ut lectus vehicula
+                            consectetur.
+                            Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.
+                            Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.
+                        </p>
                     </div>
-
-                    <div class="announcementsElement" id="card">
-                        <p class="announcementsElement" id="cardTitle">Community Share Day</p>
-                        <p class="announcementsElement" id="cardBody">Nam vel lectus tincidunt, rutrum nulla eu, 
-                            ornare libero. Aliquam dictum accumsan porttitor...</p>
-                    </div>
-
-                    <div class="announcementsElement" id="lastCard">
-                        <p class="announcementsElement" id="cardTitle">Updated Privacy Policy</p>
-                        <p class="announcementsElement" id="cardBody">Phasellus efficitur nisi get elit consectetur, 
-                            get condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
                     </div>
                 </div>
 
-                <div class="mainContentContainer" id="trending">
-                    <div class="trendingElement" id="user">
-                        <img src="Resources/Profile Pictures/tegan.png" alt="" class="smallProfile">
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Impossible App</p>
+                        <p class="projectsElement" id="cardBody">In hac habitasse platea dictumst. Vivamus dictum rutrum
+                            arcu,
+                            a placerat velit sagittis id.</p>
+                    </div>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
+                    </div>
+                </div>
+
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Easy Peasy App</p>
+                        <p class="projectsElement" id="cardBody">Etiam cursus eros ac efficitur fringilla.
+                            Vestibulum dignissim urna get accumsan aliquam.
+                            Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                    </div>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
+                    </div>
+                </div>
+
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Ad Blocker</p>
+                        <p class="projectsElement" id="cardBody">Quisque get rutrum nisl.
+                            Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.
+                            Aliquam sed malesuada eros.</p>
+                    </div>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
+                    </div>
+                </div>
+
+                <div class="projectsElement" id="card">
+                    <div class="projectsElement" id="container">
+                        <p class="projectsElement" id="cardTitle">Money Maker</p>
+                        <p class="projectsElement" id="cardBody">Present convallis, libero quis congue elementum,
+                            nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.
+                            Pellentesque mollis nec sem vel aliquam.</p>
+                    </div>
+                    <div class="projectsElement" id="icons">
+                        <img src="Resources/Icons/star-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/eye-plus-outline.svg" alt="" class="projectIcons">
+                        <img src="Resources/Icons/source-fork.svg" alt="" class="projectIcons">
+                    </div>
+                </div>
+            </div>
+
+            <div class="mainContentContainer" id="announcements">
+                <div class="announcementsElement" id="card">
+                    <p class="announcementsElement" id="cardTitle">Site Maintenance</p>
+                    <p class="announcementsElement" id="cardBody">Vestibulum condimentum tellus lacus,
+                        in accumsan elit maximus ac. Donec hendrerit sodales conque....</p>
+                </div>
+
+                <div class="announcementsElement" id="card">
+                    <p class="announcementsElement" id="cardTitle">Community Share Day</p>
+                    <p class="announcementsElement" id="cardBody">Nam vel lectus tincidunt, rutrum nulla eu,
+                        ornare libero. Aliquam dictum accumsan porttitor...</p>
+                </div>
+
+                <div class="announcementsElement" id="lastCard">
+                    <p class="announcementsElement" id="cardTitle">Updated Privacy Policy</p>
+                    <p class="announcementsElement" id="cardBody">Phasellus efficitur nisi get elit consectetur,
+                        get condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                </div>
+            </div>
+
+            <div class="mainContentContainer" id="trending">
+                <div class="trendingElement" id="user">
+                    <img src="Resources/Profile Pictures/tegan.png" alt="" class="smallProfile">
+                    <div class="trendingContainer" id="text">
                         <p class="trendingElment" id="username">@tengan</p>
                         <p class="trendingElement" id="userDescription">World PEace Builder</p>
                     </div>
+                </div>
 
-                    <div class="trendingElement" id="user">
-                        <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="smallProfile">
+                <div class="trendingElement" id="user">
+                    <img src="Resources/Profile Pictures/JustJasc.png" alt="" class="smallProfile">
+                    <div class="trendingContainer" id="text">
                         <p class="trendingElment" id="username">@justjasc</p>
                         <p class="trendingElement" id="userDescription">Super Cool Project</p>
                     </div>
+                </div>
 
-                    <div class="trendingElement" id="user">
-                        <img src="Resources/Profile Pictures/kendall.png" alt="" class="smallProfile">
+                <div class="trendingElement" id="user">
+                    <img src="Resources/Profile Pictures/kendall.png" alt="" class="smallProfile">
+                    <div class="trendingContainer" id="text">
                         <p class="trendingElment" id="username">@kendall</p>
                         <p class="trendingElement" id="userDescription">Life Changing App</p>
                     </div>
+                </div>
 
-                    <div class="trendingElement" id="user">
-                        <img src="Resources/Profile Pictures/alex.png" alt="" class="smallProfile">
+                <div class="trendingElement" id="user">
+                    <img src="Resources/Profile Pictures/alex.png" alt="" class="smallProfile">
+                    <div class="trendingContainer" id="text">
                         <p class="trendingElment" id="username">@alex</p>
                         <p class="trendingElement" id="userDescription">No Traffic Maker</p>
                     </div>
                 </div>
             </div>
-
         </div>
-    </body>
+
+    </div>
+</body>
 
 </html>
